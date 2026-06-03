@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Drizzle
+drizzle/meta/
+
+# Misc
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Project meta files (not for repo)
+implementation_plan.md
+PROGRESS.md
+Take-Home Assignment Country and State Management App.docx.md

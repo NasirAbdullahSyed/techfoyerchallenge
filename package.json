@@ -1,0 +1,28 @@
+{
+  "name": "country-state-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack Country and State Management App",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "dev:web": "turbo dev --filter=web",
+    "dev:api": "turbo dev --filter=api",
+    "db:generate": "turbo db:generate --filter=api",
+    "db:migrate": "turbo db:migrate --filter=api",
+    "db:seed": "turbo db:seed --filter=api"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "unrs-resolver"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.9.16"
+  }
+}
+
