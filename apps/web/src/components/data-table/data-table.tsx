@@ -76,6 +76,8 @@ export function DataTable<TData>({
   return (
     <div className="space-y-3">
       <div className="rounded-xl border border-border overflow-hidden">
+        {/* Horizontal scroll on small screens */}
+        <div className="overflow-x-auto">
         <Table>
           <TableHeader>
             {headerGroups.map((headerGroup) => (
@@ -140,6 +142,7 @@ export function DataTable<TData>({
             )}
           </TableBody>
         </Table>
+        </div>
       </div>
 
       {meta && !isLoading && (
