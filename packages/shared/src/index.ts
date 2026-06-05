@@ -5,7 +5,7 @@ export {
   type CreateCountryInput,
   type UpdateCountryInput,
   type Country,
-} from "./schemas/country.schema";
+} from "./schemas/country.schema.js";
 
 export {
   createStateSchema,
@@ -13,14 +13,14 @@ export {
   type CreateStateInput,
   type UpdateStateInput,
   type State,
-} from "./schemas/state.schema";
+} from "./schemas/state.schema.js";
 
 export {
   searchParamsSchema,
   bulkDeleteSchema,
   type SearchParams,
   type BulkDeleteInput,
-} from "./schemas/common.schema";
+} from "./schemas/common.schema.js";
 
 // ─── Types ───────────────────────────────────────────────────────────
-export { type APIResponse, type PaginationMeta } from "./types/api-response";
+export { type APIResponse, type PaginationMeta } from "./types/api-response.js";
