@@ -20,11 +20,11 @@ const navigation = [
   },
 ];
 
-export function Sidebar() {
+export function SidebarContent() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden md:flex md:w-64 md:flex-col border-r border-border bg-card/80 backdrop-blur-sm">
+    <div className="flex flex-col h-full bg-card/80">
       {/* Logo / Brand */}
       <div className="flex h-16 items-center gap-3 border-b border-border px-6 shrink-0">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shrink-0">
@@ -78,6 +78,14 @@ export function Sidebar() {
           Techfoyer Challenge — 2026
         </p>
       </div>
+    </div>
+  );
+}
+
+export function Sidebar() {
+  return (
+    <aside className="hidden md:flex md:w-64 md:flex-col border-r border-border">
+      <SidebarContent />
     </aside>
   );
 }

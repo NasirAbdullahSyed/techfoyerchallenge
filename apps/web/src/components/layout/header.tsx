@@ -11,7 +11,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-import { Sidebar } from "./sidebar";
+import { SidebarContent } from "./sidebar";
 
 interface BreadcrumbItem {
   label: string;
@@ -52,7 +52,7 @@ export function Header() {
         </SheetTrigger>
         <SheetContent side="left" className="w-64 p-0">
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-          <Sidebar />
+          <SidebarContent />
         </SheetContent>
       </Sheet>
 
